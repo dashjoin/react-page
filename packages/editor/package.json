@@ -19,7 +19,8 @@
     "build:css:watch": "npm-run-all build:css -- -w",
     "docs": "documentation build ./lib/**/*.js --format md --github -o ../../docs/api/editor.md",
     "clean": "rimraf \"lib\" && rimraf \"lib-es\" && rm -f *.tsbuildinfo",
-    "prepare": "cd ../.. && yarn bootstrap && yarn build:lib"
+    "prepare": "cd ../.. && yarn bootstrap && yarn build:lib",
+    "prepack": "cd ../.. && yarn bootstrap && yarn build:lib"
   },
   "peerDependencies": {
     "react": ">= 16.14",
