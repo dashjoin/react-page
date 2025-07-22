@@ -10,6 +10,7 @@ import image from '@react-page/plugins-image';
 import customLayout from '../../plugins/customLayoutPluginWithCellSpacing';
 import PageLayout from '../../components/PageLayout';
 import { cellSpacingDemo } from '../../sampleContents/cellSpacing';
+import type { UnknownObject } from 'uniforms';
 
 // Define which plugins we want to use.
 const cellPlugins = [slate(), image, customLayout];
@@ -80,7 +81,7 @@ export default function CellSpacing() {
         }}
       >
         <AutoForm
-          model={state}
+          model={state as UnknownObject}
           autosave={true}
           schema={schema}
           onSubmit={(val: Partial<CellSpacingState>) =>

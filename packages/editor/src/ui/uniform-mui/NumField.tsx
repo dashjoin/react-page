@@ -35,7 +35,7 @@ function Num({
       disabled={disabled}
       error={!!error}
       fullWidth
-      helperText={(error && showInlineError && errorMessage) || helperText}
+      helperText={((error && showInlineError && errorMessage) || helperText) as string}
       inputProps={{
         min,
         max,

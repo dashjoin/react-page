@@ -10,6 +10,7 @@ import type { Data } from '../../types';
 
 import type { SlatePluginControls } from '../../types/slatePluginDefinitions';
 import { useEffect } from 'react';
+import type { UnknownObject } from 'uniforms';
 
 function Controls<T extends Data>(
   props: SlatePluginControls<T> & {
@@ -86,9 +87,10 @@ function Controls<T extends Data>(
           <AutoForm
             ref={formRef}
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            model={props.data as any}
+            model={props.data as UnknownObject}
             schema={uniformsSchema}
             onSubmit={saveAndCloseWithData}
+            //autoField={true}
           >
             <AutoFields />
           </AutoForm>

@@ -10,6 +10,7 @@ import type {
   JsonSchema,
 } from '../../core/types';
 import makeUniformsSchema from './makeUniformsSchema';
+import { UnknownObject } from 'uniforms';
 
 export const AutoForm = lazyLoad(() => import('./AutoForm'));
 export const AutoField = lazyLoad(() => import('./AutoField'));
@@ -47,10 +48,10 @@ export function AutoformControls<T extends DataTType>(props: Props<T>) {
   return (
     <AutoForm
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      model={data as any}
+      model={data as UnknownObject}
       autosave={true}
       schema={bridge}
-      onSubmit={onChange}
+      onSubmit={onChange as any}
     >
       {Content ? (
         <Content {...props} columnCount={columnCount} />
