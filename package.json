@@ -69,7 +69,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "bootstrap": "yarn install",
     "build": "cross-env NODE_ENV=production lerna run build --parallel",
-    "build:lib": "cross-env NODE_ENV=production lerna run build --ignore @react-page/examples --parallel",
+    "build:lib": "cross-env NODE_ENV=production lerna run build --ignore @react-page/examples",
     "build:examples": "yarn --cwd examples build",
     "build:watch": "cross-env NODE_ENV=development lerna run build:watch --parallel",
     "clean": "lerna run clean",
