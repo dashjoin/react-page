@@ -52,7 +52,8 @@
     "redux-undo": "^1.0.1",
     "tslib": "^2.2.0",
     "uniforms": "^4.0.0",
-    "uniforms-bridge-json-schema": "^4.0.0"
+    "uniforms-bridge-json-schema": "^4.0.0",
+    "uniforms-mui": "^4.0.0"
   },
   "devDependencies": {
     "@types/invariant": "^2.2.35",

@@ -3441,6 +3441,7 @@ __metadata:
     tslib: "npm:^2.2.0"
     uniforms: "npm:^4.0.0"
     uniforms-bridge-json-schema: "npm:^4.0.0"
+    uniforms-mui: "npm:^4.0.0"
   peerDependencies:
     react: ">= 16.14"
     react-dom: ">= 16.14"
@@ -20532,6 +20533,21 @@ __metadata:
   peerDependencies:
     uniforms: 4.0.0
   checksum: 10c0/bc5d194c8acd1a70229f55b787d84a176cf484c206ac614811f9665305c195bfb2533e8b76ccca81afb4ed98f22615070f12b43c39725dec6531ab8117f589f5
+  languageName: node
+  linkType: hard
+
+"uniforms-mui@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "uniforms-mui@npm:4.0.0"
+  dependencies:
+    invariant: "npm:^2.0.0"
+    lodash: "npm:^4.0.0"
+    tslib: "npm:2.8.0"
+  peerDependencies:
+    "@mui/material": ^6.0.0
+    react: ^18.0.0 || ^17.0.0
+    uniforms: 4.0.0
+  checksum: 10c0/88526531642e7fc3dded292ab99a756281af8946e3538bd4749bc75f8fc3c5f62625e067394ad712df2b0e62d401e6b9a5791d0facac358ad6e06d93e8ca9893
   languageName: node
   linkType: hard
 
