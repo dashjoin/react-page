@@ -1,3 +1,3 @@
-import { AutoFields } from '../uniform-mui';
+import { AutoFields } from 'uniforms-mui';
 
 export default AutoFields;

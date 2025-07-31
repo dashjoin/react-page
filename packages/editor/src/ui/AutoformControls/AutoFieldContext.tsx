@@ -1,6 +1,6 @@
 import type { FC, PropsWithChildren } from 'react';
 import React from 'react';
-import { AutoField } from '../uniform-mui';
+import { AutoField } from 'uniforms-mui';
 
 const AutofieldContextProvider: FC<PropsWithChildren> = ({ children }) => (
   <AutoField.componentDetectorContext.Provider
