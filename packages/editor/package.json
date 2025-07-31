@@ -25,11 +25,11 @@
   "peerDependencies": {
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.1",
+    "react": ">= 16.14",
+    "react-dom": ">= 16.14",
     "uniforms": "^4.0.0",
     "uniforms-bridge-json-schema": "^4.0.0",
-    "uniforms-mui": "^4.0.0",
-    "react": ">= 16.14",
-    "react-dom": ">= 16.14"
+    "uniforms-mui": "^4.0.0"
   },
   "dependencies": {
     "@welldone-software/why-did-you-render": "^7.0.1",
@@ -59,7 +59,10 @@
     "@types/invariant": "^2.2.35",
     "@types/lodash.throttle": "^4.1.6",
     "@types/react-color": "^3.0.4",
-    "@types/react-portal": "^4.0.4"
+    "@types/react-portal": "^4.0.4",
+    "uniforms": "^4.0.0",
+    "uniforms-bridge-json-schema": "^4.0.0",
+    "uniforms-mui": "^4.0.0"
   },
   "publishConfig": {
     "access": "public"

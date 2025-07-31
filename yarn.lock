@@ -3411,8 +3411,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-page/editor@workspace:packages/editor"
   dependencies:
-    "@mui/icons-material": "npm:^5.8.0"
-    "@mui/material": "npm:^5.8.1"
     "@types/invariant": "npm:^2.2.35"
     "@types/lodash.throttle": "npm:^4.1.6"
     "@types/react-color": "npm:^3.0.4"
@@ -3443,8 +3441,13 @@ __metadata:
     uniforms-bridge-json-schema: "npm:^4.0.0"
     uniforms-mui: "npm:^4.0.0"
   peerDependencies:
+    "@mui/icons-material": ^5.8.0
+    "@mui/material": ^5.8.1
     react: ">= 16.14"
     react-dom: ">= 16.14"
+    uniforms: ^4.0.0
+    uniforms-bridge-json-schema: ^4.0.0
+    uniforms-mui: ^4.0.0
   languageName: unknown
   linkType: soft
 
